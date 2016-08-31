@@ -1,0 +1,50 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   EnumClass.java
+
+package com.enum_class;
+
+
+// Referenced classes of package com.enum_class:
+//            EnumClass
+
+static final class EnumClass$Alphabet extends Enum
+{
+
+    public static EnumClass$Alphabet[] values()
+    {
+        EnumClass$Alphabet aenumclass$alphabet[];
+        int i;
+        EnumClass$Alphabet aenumclass$alphabet1[];
+        System.arraycopy(aenumclass$alphabet = ENUM$VALUES, 0, aenumclass$alphabet1 = new EnumClass$Alphabet[i = aenumclass$alphabet.length], 0, i);
+        return aenumclass$alphabet1;
+    }
+
+    public static EnumClass$Alphabet valueOf(String s)
+    {
+        return (EnumClass$Alphabet)Enum.valueOf(com/enum_class/EnumClass$Alphabet, s);
+    }
+
+    public static final EnumClass$Alphabet a;
+    public static final EnumClass$Alphabet b;
+    public static final EnumClass$Alphabet c;
+    public static final EnumClass$Alphabet d;
+    private static final EnumClass$Alphabet ENUM$VALUES[];
+
+    static 
+    {
+        a = new EnumClass$Alphabet("a", 0);
+        b = new EnumClass$Alphabet("b", 1);
+        c = new EnumClass$Alphabet("c", 2);
+        d = new EnumClass$Alphabet("d", 3);
+        ENUM$VALUES = (new EnumClass$Alphabet[] {
+            a, b, c, d
+        });
+    }
+
+    private EnumClass$Alphabet(String s, int i)
+    {
+        super(s, i);
+    }
+}
